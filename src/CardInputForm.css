@@ -1,0 +1,55 @@
+.card-input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 20px; /* Add padding to ensure some space around the form elements */
+    border-radius: 8px; /* Optional: adds rounded corners to the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+    max-width: 400px; /* Optional: you can set a max-width to control the form size */
+    margin: auto; /* Optional: centers the form in the middle of the page */
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Add this to change the input background color when they are focused */
+    transition: background-color 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    background-color: #e3f2fd; /* A lighter blue background for focus */
+    outline: none; /* Optional: removes the default focus outline */
+  }
+  
+  button {
+    padding: 8px;
+    width: calc(100% - 16px);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff; /* Bootstrap primary blue for example */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* A darker blue for hover effect */
+  }
+  
